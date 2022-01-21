@@ -1,6 +1,5 @@
 from collections import deque
 
-
 q.append(VALUE)
 q.appendleft(VALUE)
 q.pop()
