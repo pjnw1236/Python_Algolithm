@@ -1,0 +1,9 @@
+from collections import Counter
+
+s = "aaaabbbccd"
+
+counter = Counter(s)
+
+print(counter)
+
+# Counter({'a': 4, 'b': 3, 'c': 2, 'd': 1})
