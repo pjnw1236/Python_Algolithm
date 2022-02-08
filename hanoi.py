@@ -12,4 +12,4 @@ def hanoi(n, start_pos, end_pos, middle_pos):
     
     hanoi(n-1, start_pos, middle_pos, end_pos) 
     print(start_pos, "->", end_pos) 
-    hanoi(n-1, middle_pos, start_pos, end_pos) 
+    hanoi(n-1, middle_pos, end_pos, start_pos) 
