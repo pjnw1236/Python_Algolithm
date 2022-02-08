@@ -1,9 +1,11 @@
 # 하노이의 탑 알고리즘
 
-# n : 옮기려는 원반의 개수
+# n : 옮기려는 원반의 개수 (하노이의 탑)
 # start_pos : 옮길 원반이 현재 있는 출발점 기둥
 # end_pos : 원반을 옮길 도착점 기둥
 # middle_pos : 옮기는 과정에서 사용할 보조 (중간) 기둥
+
+# start_pos에 있는 n개의 원반을 end_pos로 이동시키는 과정
 
 def hanoi(n, start_pos, end_pos, middle_pos):
     if n == 1:
