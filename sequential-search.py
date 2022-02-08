@@ -16,6 +16,8 @@ def search_list(array, value):
             return i
     return -1 
 
+
+# 다음 예시로 확인
 v = [17, 92, 18, 33, 58, 7, 33, 42]
 
 print(search_list(v, 18))  # 2
