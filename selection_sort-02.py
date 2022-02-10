@@ -10,7 +10,7 @@ def selection_sort(array):
             if array[min_idx] > array[j]:
                 min_idx = j 
                 # i번 인덱스보다 더 작은 수가 있으면 서로 교환
-        array[i], array[min_idx] = array[min_idx], array[i]
+            array[i], array[min_idx] = array[min_idx], array[i]
     return array
 
 
