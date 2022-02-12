@@ -50,13 +50,12 @@ def merge_sort(Arr):
     mid = n//2 
     g1 = Arr[:mid] 
     g2 = Arr[mid:] 
+    # 재귀적으로 수행하여 g1, g2가 오름차순으로 정렬됨
     merge_sort(g1) 
     merge_sort(g2) 
-
-    i1 = 0
-    i2 = 0
-    ia = 0
-
+    i1 = 0 # g1의 인덱스
+    i2 = 0 # g2의 인덱스 
+    ia = 0 # Arr의 인덱스
     while i1 < len(g1) and i2 < len(g2): 
         if g1[i1] < g2[i2]:
             Arr[ia]=g1[i1] 
@@ -65,8 +64,7 @@ def merge_sort(Arr):
         else:
             Arr[ia] = g2[i2]
             i2 += 1
-            ia += 1
-        
+            ia += 1     
     while i1 < len(g1):
         Arr[ia] = g1[i1] 
         i1 += 1
@@ -77,6 +75,6 @@ def merge_sort(Arr):
         ia += 1
     
     return Arr
-    
+
 d = [6, 8, 3, 9, 10, 1, 2, 4, 7, 5]
 print(merge_sort(d)) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
