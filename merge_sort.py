@@ -53,6 +53,7 @@ def merge_sort(Arr):
     # 재귀적으로 수행하여 g1, g2가 오름차순으로 정렬됨
     merge_sort(g1) 
     merge_sort(g2) 
+    
     i1 = 0 # g1의 인덱스
     i2 = 0 # g2의 인덱스 
     ia = 0 # Arr의 인덱스
